@@ -9,11 +9,11 @@ func input(event: InputEvent) -> void:
 func enter() -> void:
 	pass
 	
-## Returns null to continue with this state, or a different state to switch to it
+## Return null to continue with this state, or a different state to switch to it
 func update(delta: float) -> State:
 	return null
 	
-## Returns null to continue with this state, or a different state to switch to it
+## Return null to continue with this state, or a different state to switch to it
 func update_physics(delta: float, space_state: PhysicsDirectSpaceState2D) -> State:
 	return null
 
