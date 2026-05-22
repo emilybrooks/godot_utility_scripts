@@ -9,13 +9,15 @@ func change_state(new_state: State) -> void:
 		state.exit()
 	state = new_state
 	state.enter()
-	
-func _input(event: InputEvent) -> void:
-	state.input(event)
-			
+
 func _ready() -> void:
 	change_state()
 
+func _input(event: InputEvent) -> void:
+	var new_state = state.input(event)
+	if new_state:
+		change_state(new_state)
+			
 func _process(delta: float) -> void:
 	var new_state = state.update(delta)
 	if new_state:
