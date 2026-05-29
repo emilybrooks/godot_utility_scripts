@@ -3,11 +3,11 @@ extends State
 func _ready() -> void:
 	pass
 
-func input(event: InputEvent) -> void:
-	pass
-
 func enter() -> void:
 	pass
+
+func input(event: InputEvent) -> State:
+	return null
 
 func update(delta: float) -> State:
 	return null

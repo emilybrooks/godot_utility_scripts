@@ -14,7 +14,7 @@ var normal: Vector3
 ## You can optionally specify objects to exclude from colliding with this raycast, see [member PhysicsRayQueryParameters3D.exclude].
 func _init
 (
-	start: Vector3, ##test
+	start: Vector3,
 	end: Vector3,
 	space_state: PhysicsDirectSpaceState3D,
 	exclude: Array[RID] = []
